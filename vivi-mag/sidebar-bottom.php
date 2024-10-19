@@ -1,0 +1,1 @@
+<?php do_action( 'vivi_mag_bottom_sidebar'); ?>

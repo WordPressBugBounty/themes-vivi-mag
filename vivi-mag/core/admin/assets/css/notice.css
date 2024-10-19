@@ -1,0 +1,22 @@
+/*
+ * Vivi Mag panel css file
+ * https://www.themeinprogress.com
+ *
+ * Copyright 2019, ThemeinProgress
+ * Licensed under MIT license
+ * https://opensource.org/licenses/mit-license.php
+ */
+
+ .notice p.notice-coupon-message {
+    padding: 0;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.notice-coupon-message .dashicon {
+    width: 15px;
+    height: 15px;
+    line-height: 17px;
+    font-size: 15px;
+    margin-right:5px;
+}

@@ -1,0 +1,243 @@
+/*
+ * Vivi Mag panel css file
+ * https://www.themeinprogress.com
+ *
+ * Copyright 2019, ThemeinProgress
+ * Licensed under MIT license
+ * https://opensource.org/licenses/mit-license.php
+ */
+
+/* ===============================================
+   GENERAL
+   =============================================== */
+
+button:hover ,
+button:active ,
+button:focus ,
+input:hover ,
+input:active ,
+input:focus ,
+textarea:hover ,
+textarea:active ,
+textarea:focus {
+	outline:none !important;
+	text-decoration:none !important;
+}
+
+input[type=file]:hover ,
+input[type=file]:active ,
+input[type=file]:focus {
+	border:none !important;
+}
+
+.clear {
+	clear:both;
+	float:none !important;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.postformat ,
+.pageformat {
+	display:none;
+}
+
+.postformat {
+	margin:0 0 12px 0;
+	position:relative;
+}
+
+.updated.fade.message_save.vivi_mag_message { 
+	margin:0 0 15px 0;
+	width:98%; 
+	padding:10px 0;
+}
+
+/* ===============================================
+   TABS
+   =============================================== */
+
+#tabs.vivi_mag_metaboxes { 
+	width:98%; 
+	height:100%;
+	font-family:'Open Sans',Arial,sans-serif;
+	font-size:14px; 
+}
+
+#tabs.vivi_mag_metaboxes h4.title { 
+	margin:2em 0; 
+    color: #23282d;
+    font-size: 1.1em;
+    font-weight: 600;	
+}
+
+#tabs.vivi_mag_metaboxes ul { 
+	list-style:none; 
+	margin:0; 
+	background:#4588b5;
+	padding:15px; 
+	margin-top:15px; 
+}
+
+#tabs.vivi_mag_metaboxes ul.orders {
+	padding:0;
+	background:none;
+}
+
+#tabs.vivi_mag_metaboxes .ui-tabs-panel {
+    padding: 0 2px;
+}
+
+#tabs.vivi_mag_metaboxes { 
+	width:100%;
+	border:none;
+}
+
+#tabs.vivi_mag_metaboxes ul { 
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+#tabs.vivi_mag_metaboxes li { 
+	float:left;
+	margin:0;
+	border:none;
+	background: none;
+}
+
+#tabs.vivi_mag_metaboxes li a { 
+	color:#fff; 
+	text-decoration:none; 
+	padding:15px; 
+	display:block;
+	text-align:center; 
+	-webkit-transition: all .3s ease; 	
+	-moz-transition: all .3s ease; 
+	-o-transition: all .3s ease; 
+	float:left; 
+	font-size:14px;
+	font-weight:700;
+	text-transform:uppercase;
+	text-shadow:none;
+	margin:0;
+}
+
+#tabs.vivi_mag_metaboxes li a.delete { 
+	margin:0; 
+	float:none; 
+	display:inline; 
+	padding:5px; 
+	font-size:14px;
+	color:#555;
+	font-weight:400 
+}
+
+#tabs.vivi_mag_metaboxes li a:hover, 
+#tabs.vivi_mag_metaboxes li.ui-tabs-active a, 
+#tabs.vivi_mag_metaboxes li.ui-state-active a {
+	background:#5C97BF;
+	color:#fff;
+	text-shadow:none;
+}
+
+#tabs.vivi_mag_metaboxes li a:focus { 
+	outline:none;
+}
+
+#tabs.vivi_mag_metaboxes li.ui-state-active, 
+#tabs.vivi_mag_metaboxes li.ui-widget-content 
+#tabs.vivi_mag_metaboxes li.ui-state-active, 
+#tabs.vivi_mag_metaboxes li.ui-widget-header 
+#tabs.vivi_mag_metaboxes li.ui-state-active {
+    background: none;
+	padding:0;
+}
+
+#tabs.vivi_mag_metaboxes .metaboxe_box {
+	padding: 0 !important;
+}
+
+/* ===============================================
+   INPUTBOX
+   =============================================== */
+
+.vivi_mag_metaboxes .vivi_mag_inputbox {
+	border-bottom:1px solid #f1f1f1;
+	padding:15px 0;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox select,
+.vivi_mag_metaboxes .vivi_mag_inputbox textarea,
+.vivi_mag_metaboxes .vivi_mag_inputbox input[type="text"] {
+	width:100%;
+	height:35px;
+	font-size:12px;
+	padding:0 1%;
+	color:#333;
+	line-height:1.5em;
+	background:#fff;
+	border:solid 1px #f1f1f1;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox textarea {
+	height:155px;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox label {
+	color:#333; 
+	font-size:14px;
+	padding:5px 0;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox em ,
+.vivi_mag_metaboxes .vivi_mag_inputbox strong {
+	width:100%;
+	float:none;
+	display:block;
+	font-size:12px; 
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox label ,
+.vivi_mag_metaboxes .vivi_mag_inputbox em {
+	width:100%;
+	float:none;
+	display:block;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox p {
+	color:#333; 
+	font-style:italic; 
+	font-size:12px; 
+    margin:5px 0 0 0;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox span.separator{
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox textarea:focus, 
+.vivi_mag_metaboxes .vivi_mag_inputbox input:focus, 
+.vivi_mag_metaboxes .vivi_mag_inputbox select:focus {
+	background:#fff;
+	border:solid 1px #ddd;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox .input-left {
+	float:left;
+	width:39%;
+}
+
+.vivi_mag_metaboxes .vivi_mag_inputbox .input-right {
+	float:right;
+	width:59%;
+}
