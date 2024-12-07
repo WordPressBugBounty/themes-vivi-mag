@@ -469,7 +469,6 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
             <div class="inside">
 
 				<h2><?php esc_html_e('Upgrade to Vivi Mag Pro','vivi-mag');?></h2>
-                <p><?php esc_html_e('Pay what you want to unlock all premium features of Vivi Mag theme like...','vivi-mag');?></p>
 
                 <ul class="features-list">
 					<li><span class="dashicon dashicons dashicons-yes"></span><?php esc_html_e('600+ Google Fonts','vivi-mag');?></li>
@@ -484,14 +483,13 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
                 	<li><span class="dashicon dashicons dashicons-yes"></span><?php esc_html_e('Custom shortcodes','vivi-mag');?></li>
                 	<li><span class="dashicon dashicons dashicons-yes"></span><?php esc_html_e('Shortcodes generator','vivi-mag');?></li>
                 	<li><span class="dashicon dashicons dashicons-yes"></span><?php esc_html_e('Unlimited website usage','vivi-mag');?></li>
-                	<li><span class="dashicon dashicons dashicons-yes"></span><?php esc_html_e('Lifetime updates and support','vivi-mag');?></li>
                 	<li><span class="dashicon dashicons dashicons-yes"></span><?php esc_html_e('30 days money back guarantee','vivi-mag');?></li>
                 </ul>
                 
                 <ul>
 
                     <li><a class="button demo-button" href="<?php echo esc_url( 'https://demo.themeinprogress.com/?theme=ViviMag' ); ?>" title="<?php esc_attr_e('View live demo','vivi-mag');?>" target="_blank"><?php esc_html_e('View live demo','vivi-mag');?></a></li>
-                    <li><a class="button purchase-button" href="<?php echo esc_url( 'https://www.themeinprogress.com/vivi-mag-elegant-and-stylish-wordpress-theme/?ref=2&campaign=vivi-mag-panel' ); ?>" title="<?php esc_attr_e('Name your price','vivi-mag');?>" target="_blank"><?php esc_html_e('Name your price','vivi-mag');?></a></li>
+                    <li><a class="button purchase-button" href="<?php echo esc_url( 'https://www.themeinprogress.com/vivi-mag-elegant-and-stylish-wordpress-theme/?ref=2&campaign=vivi-mag-panel' ); ?>" title="<?php esc_attr_e('Upgrade now','vivi-mag');?>" target="_blank"><?php esc_html_e('Upgrade now','vivi-mag');?></a></li>
 
                 </ul>
 

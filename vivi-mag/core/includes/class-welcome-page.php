@@ -325,7 +325,7 @@ if( !class_exists( 'vivi_mag_welcome' ) ) {
 					<div class="theme-steps">
 						<h3><?php echo esc_html__('Documentation', 'vivi-mag'); ?></h3>
 						<p><?php echo esc_html__('Need help to use Vivi Mag? Please check our full documentation.', 'vivi-mag'); ?></p>
-						<a target="_blank" class="button button-primary" href="<?php echo esc_url('https://vivi-mag-pro.demo.themeinprogress.com/documentation/vivi-mag-documentation/'); ?>"><?php echo esc_html__('Go to Docs', 'vivi-mag'); ?></a>
+						<a target="_blank" class="button button-primary" href="<?php echo esc_url('https://demo.themeinprogress.eu/vivi-mag-pro/documentation/vivi-mag-documentation/'); ?>"><?php echo esc_html__('Go to Docs', 'vivi-mag'); ?></a>
 					</div>
 
 				</div>
@@ -688,9 +688,9 @@ if( !class_exists( 'vivi_mag_welcome' ) ) {
                     <tr class="upsell-row">
 
                         <td></td>
-                        <td><?php esc_html_e( 'Pay what you want to enable all pro features', 'vivi-mag' ); ?></td>
+                        <td></td>
                         <td>
-                            <a  target="_blank" href="<?php echo esc_url( 'https://www.themeinprogress.com/vivi-mag-elegant-and-stylish-wordpress-theme/?ref=2&campaign=vivi-mag-welcome-page' );?>" class="button button-primary"><?php echo esc_html__('Name your price', 'vivi-mag'); ?></a>
+                            <a  target="_blank" href="<?php echo esc_url( 'https://www.themeinprogress.com/vivi-mag-elegant-and-stylish-wordpress-theme/?ref=2&campaign=vivi-mag-welcome-page' );?>" class="button button-primary"><?php echo esc_html__('Upgrade now', 'vivi-mag'); ?></a>
                         </td>
                     </tr>
 

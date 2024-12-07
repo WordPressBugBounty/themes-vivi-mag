@@ -2,9 +2,9 @@
 Contributors: alexvtn
 Tags: custom-background, custom-colors, custom-logo, custom-menu, custom-header, featured-images, footer-widgets, post-formats, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns, three-columns, grid-layout, blog, e-commerce, photography
 Requires at least: 4.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires PHP: 5.3
-Tested up to: 6.6
+Tested up to: 6.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,6 +20,14 @@ Vivi Mag WordPress Theme, Copyright 2024 ThemeinProgress.
 Vivi Mag is distributed under the terms of the GPLv3 or later
 
 == Changelog ==
+
+= 1.0.4 =
+Release date - December, 07 - 2024
+
+* Optimized : Links on footer
+* Updated : Documentation link
+* Updated : WooCommerce templates
+* Tested with WordPress 6.7
 
 = 1.0.3 =
 Release date - August, 22 - 2024

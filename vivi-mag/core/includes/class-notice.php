@@ -77,8 +77,8 @@ if( !class_exists( 'vivi_mag_admin_notice' ) ) {
             
             		<strong>
 
-                        <?php esc_html_e( 'Pay what you want to unlock all premium features of Vivi Mag theme like...', 'vivi-mag' );  ?>
-                    
+						<?php esc_html_e( 'Unlock all premium features of Vivi Mag theme like...', 'vivi-mag' );  ?>
+
                     </strong>
                 
                 </p>
@@ -91,13 +91,12 @@ if( !class_exists( 'vivi_mag_admin_notice' ) ) {
 					<span class="dashicon dashicons dashicons-yes-alt" size="10"></span><?php esc_html_e( 'Unlimited widget areas', 'vivi-mag' ); ?><br/>
 					<span class="dashicon dashicons dashicons-yes-alt" size="10"></span><?php esc_html_e( '6 additional "postBlocks" modules', 'vivi-mag' ); ?><br/>
 					<span class="dashicon dashicons dashicons-yes-alt" size="10"></span><?php esc_html_e( '2 additional "postBlocks" layouts', 'vivi-mag' ); ?><br/>
-					<span class="dashicon dashicons dashicons-yes-alt" size="10"></span><?php esc_html_e( 'Lifetime updates and support', 'vivi-mag' ); ?>
                 
                 </p>
 
 				<p>
             		
-					<a target="_blank" href="<?php echo esc_url( 'https://www.themeinprogress.com/vivi-mag-elegant-and-stylish-wordpress-theme/?ref=2&campaign=vivi-mag-notice' ); ?>" class="button button-primary"><?php esc_html_e( 'Name your price', 'vivi-mag' ); ?></a>
+					<a target="_blank" href="<?php echo esc_url( 'https://www.themeinprogress.com/vivi-mag-elegant-and-stylish-wordpress-theme/?ref=2&campaign=vivi-mag-notice' ); ?>" class="button button-primary"><?php esc_html_e( 'Upgrade Now', 'vivi-mag' ); ?></a>
                 
             	</p>
 

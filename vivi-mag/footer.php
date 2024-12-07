@@ -30,11 +30,11 @@
 								echo esc_html( date_i18n( __( ' Y', 'vivi-mag' )));
 							
 							endif;
-							
-                    	?>
 
-                    	<a href="<?php echo esc_url('https://www.themeinprogress.com/'); ?>" target="_blank"><?php printf( esc_html__( ' | Theme by %s', 'vivi-mag' ), 'ThemeinProgress' ); ?></a>
-                    	<a href="<?php echo esc_url('http://wordpress.org/'); ?>" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'vivi-mag' ); ?>" rel="generator"><?php printf( esc_html__( ' | Proudly powered by %s', 'vivi-mag' ), 'WordPress' ); ?></a>
+							echo ' | <a href="' . esc_url('https://www.themeinprogress.com/') . '" target="_blank">' . sprintf(esc_html__('Theme by %s', 'vivi-mag'), 'ThemeinProgress') . '</a>';
+							echo ' | <a href="' . esc_url('http://wordpress.org/') . '" title="' . esc_attr__('A Semantic Personal Publishing Platform', 'vivi-mag') . '" rel="generator">' . sprintf(esc_html__('Proudly powered by %s', 'vivi-mag'), 'WordPress') . '</a>';
+
+                    	?>
                             
                     </p>
 

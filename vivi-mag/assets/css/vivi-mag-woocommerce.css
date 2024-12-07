@@ -7,6 +7,16 @@
  * https://opensource.org/licenses/mit-license.php
  */
 
+.woocommerce button {
+	border: none;
+}
+
+.woocommerce .woocommerce-error:focus-visible, 
+.woocommerce .woocommerce-message:focus-visible, 
+.woocommerce .woocommerce-info:focus-visible {
+	outline: none;
+}
+
 /* ===============================================
    WooCommerce style
    ============================================= */
