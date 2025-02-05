@@ -3,6 +3,22 @@
 	<div class="changelog_element">
 
 		<span class="theme_version">
+		    <strong><?php echo esc_html__('v1.0.6', 'vivi-mag'); ?></strong>
+		    <?php echo esc_html__('Release date : February, 05 - 2025', 'vivi-mag'); ?>
+		    <span class="dashicons dashicons-arrow-down-alt2"></span>
+		</span>
+
+		<div class="changelog_details" style="display: none; ">
+		    <ul>
+				<li><?php echo esc_html__('Updated : WooCommerce templates', 'vivi-mag'); ?></li>
+		    </ul>
+		</div>
+
+	</div>
+
+	<div class="changelog_element">
+
+		<span class="theme_version">
 		    <strong><?php echo esc_html__('v1.0.5', 'vivi-mag'); ?></strong>
 		    <?php echo esc_html__('Release date : January, 07 - 2025', 'vivi-mag'); ?>
 		    <span class="dashicons dashicons-arrow-down-alt2"></span>

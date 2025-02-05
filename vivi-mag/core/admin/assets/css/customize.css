@@ -7,15 +7,26 @@
  * https://opensource.org/licenses/mit-license.php
  */
 
-#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title, 
-#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title:focus, 
-#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title:hover, 
-#customize-controls #accordion-section-vivi-mag-customize-info.control-section.open .accordion-section-title, 
-#customize-controls #accordion-section-vivi-mag-customize-info.control-section:hover>.accordion-section-title { 
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title,
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title button { 
 	background-color: #ec7063 !important;
     border-left-color: #ec7063;
 	color: #fff !important;
 	font-weight:600;
+	-webkit-transition:background-color .3s ease, border-color .3s ease;
+	-moz-transition:background-color .3s ease, border-color .3s ease;
+	-o-transition:background-color .3s ease, border-color .3s ease;
+	transition:background-color .3s ease, border-color .3s ease;
+}
+
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title:focus, 
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title:hover, 
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title:focus button, 
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section .accordion-section-title:hover button, 
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section.open .accordion-section-title, 
+#customize-controls #accordion-section-vivi-mag-customize-info.control-section:hover>.accordion-section-title { 
+	background-color: #e74c3c !important;
+    border-left-color: #e74c3c;
 }
 
 li#accordion-section-vivi-mag-customize-info h3.accordion-section-title:after { 

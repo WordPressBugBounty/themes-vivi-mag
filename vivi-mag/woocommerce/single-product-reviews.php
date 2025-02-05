@@ -10,9 +10,9 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see     https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce/Templates
- * @version 4.3.0
+ * @see     https://woocommerce.com/document/template-structure/
+ * @package WooCommerce\Templates
+ * @version 9.6.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -28,15 +28,15 @@ if ( ! comments_open() ) {
 	<div id="comments">
 		<h3 class="woocommerce-Reviews-title comments">
 			<?php
-                $count = $product->get_review_count();
-                if ( $count && wc_review_ratings_enabled() ) {
-                    /* translators: 1: reviews count 2: product name */
-                    $reviews_title = sprintf( esc_html( _n( '%1$s review for %2$s', '%1$s reviews for %2$s', $count, 'vivi-mag' ) ), esc_html( $count ), '<span>' . get_the_title() . '</span>' );
-                    echo apply_filters( 'woocommerce_reviews_title', $reviews_title, $count, $product ); // WPCS: XSS ok.
-                } else {
-                    esc_html_e( 'Reviews', 'vivi-mag' );
-                }
-            ?>
+				$count = $product->get_review_count();
+				if ( $count && wc_review_ratings_enabled() ) {
+					/* translators: 1: reviews count 2: product name */
+					$reviews_title = sprintf( esc_html( _n( '%1$s review for %2$s', '%1$s reviews for %2$s', $count, 'vivi-mag' ) ), esc_html( $count ), '<span>' . get_the_title() . '</span>' );
+					echo apply_filters( 'woocommerce_reviews_title', $reviews_title, $count, $product ); // WPCS: XSS ok.
+				} else {
+					esc_html_e( 'Reviews', 'vivi-mag' );
+				}
+			?>
         </h3>
 
 		<?php if ( have_comments() ) : ?>
@@ -52,8 +52,8 @@ if ( ! comments_open() ) {
 					apply_filters(
 						'woocommerce_comment_pagination_args',
 						array(
-							'prev_text' => '&larr;',
-							'next_text' => '&rarr;',
+							'prev_text' => is_rtl() ? '&rarr;' : '&larr;',
+							'next_text' => is_rtl() ? '&larr;' : '&rarr;',
 							'type'      => 'list',
 						)
 					)
@@ -78,6 +78,8 @@ if ( ! comments_open() ) {
 					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'vivi-mag' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'vivi-mag' ), get_the_title() ),
 					/* translators: %s is product title */
 					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'vivi-mag' ),
+					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title">',
+					'title_reply_after'   => '</span>',
 					'comment_notes_after' => '',
 					'label_submit'        => esc_html__( 'Submit', 'vivi-mag' ),
 					'logged_in_as'        => '',
@@ -91,12 +93,14 @@ if ( ! comments_open() ) {
 						'type'     => 'text',
 						'value'    => $commenter['comment_author'],
 						'required' => $name_email_required,
+						'autocomplete' => 'name',
 					),
 					'email'  => array(
 						'label'    => __( 'Email', 'vivi-mag' ),
 						'type'     => 'email',
 						'value'    => $commenter['comment_author_email'],
 						'required' => $name_email_required,
+						'autocomplete' => 'email',
 					),
 				);
 
@@ -110,7 +114,7 @@ if ( ! comments_open() ) {
 						$field_html .= '&nbsp;<span class="required">*</span>';
 					}
 
-					$field_html .= '</label><input id="' . esc_attr( $key ) . '" name="' . esc_attr( $key ) . '" type="' . esc_attr( $field['type'] ) . '" value="' . esc_attr( $field['value'] ) . '" size="30" ' . ( $field['required'] ? 'required' : '' ) . ' /></p>';
+					$field_html .= '</label><input id="' . esc_attr( $key ) . '" name="' . esc_attr( $key ) . '" type="' . esc_attr( $field['type'] ) . '" autocomplete="' . esc_attr( $field['autocomplete'] ) . '" value="' . esc_attr( $field['value'] ) . '" size="30" ' . ( $field['required'] ? 'required' : '' ) . ' /></p>';
 
 					$comment_form['fields'][ $key ] = $field_html;
 				}
