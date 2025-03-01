@@ -12,7 +12,7 @@
  *
  * @see     https://woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 9.6.0
+ * @version 9.7.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -78,7 +78,7 @@ if ( ! comments_open() ) {
 					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'vivi-mag' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'vivi-mag' ), get_the_title() ),
 					/* translators: %s is product title */
 					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'vivi-mag' ),
-					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title">',
+					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title" role="heading" aria-level="3">',
 					'title_reply_after'   => '</span>',
 					'comment_notes_after' => '',
 					'label_submit'        => esc_html__( 'Submit', 'vivi-mag' ),
@@ -126,7 +126,7 @@ if ( ! comments_open() ) {
 				}
 
 				if ( wc_review_ratings_enabled() ) {
-					$comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating">' . esc_html__( 'Your rating', 'vivi-mag' ) . ( wc_review_ratings_required() ? '&nbsp;<span class="required">*</span>' : '' ) . '</label><select name="rating" id="rating" required>
+					$comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating" id="comment-form-rating-label">' . esc_html__( 'Your rating', 'vivi-mag' ) . ( wc_review_ratings_required() ? '&nbsp;<span class="required">*</span>' : '' ) . '</label><select name="rating" id="rating" required>
 						<option value="">' . esc_html__( 'Rate&hellip;', 'vivi-mag' ) . '</option>
 						<option value="5">' . esc_html__( 'Perfect', 'vivi-mag' ) . '</option>
 						<option value="4">' . esc_html__( 'Good', 'vivi-mag' ) . '</option>

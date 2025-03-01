@@ -94,8 +94,14 @@ if( !class_exists( 'vivi_mag_admin_notice' ) ) {
                 
                 </p>
 
+            	<p>
+					<strong><?php esc_html_e( 'Get the premium version of Vivi Mag (Starting at €19)', 'vivi-mag' ); ?></strong> <br/>
+					<strong><?php esc_html_e( 'Or choose the Plus plan to use Vivi Mag as a starter theme to build your website.', 'vivi-mag' ); ?></strong>
+                </p>
+
 				<p>
-            		
+
+					<a href="<?php echo esc_url(admin_url( 'themes.php?page=vivi-mag-welcome-page&section=free_pro' )); ?>" class="button"><?php esc_html_e( 'Free vs Pro', 'vivi-mag' ); ?></a>
 					<a target="_blank" href="<?php echo esc_url( 'https://www.themeinprogress.com/vivi-mag-elegant-and-stylish-wordpress-theme/?ref=2&campaign=vivi-mag-notice' ); ?>" class="button button-primary"><?php esc_html_e( 'Upgrade Now', 'vivi-mag' ); ?></a>
                 
             	</p>
