@@ -95,7 +95,7 @@ if( !class_exists( 'vivi_mag_admin_notice' ) ) {
                 </p>
 
             	<p>
-					<strong><?php esc_html_e( 'Get the premium version of Vivi Mag (Starting at €19)', 'vivi-mag' ); ?></strong> <br/>
+					<strong><?php esc_html_e( 'Get the premium version of Vivi Mag (Starting at €25)', 'vivi-mag' ); ?></strong> <br/>
 					<strong><?php esc_html_e( 'Or choose the Plus plan to use Vivi Mag as a starter theme to build your website.', 'vivi-mag' ); ?></strong>
                 </p>
 

@@ -3,6 +3,22 @@
 	<div class="changelog_element">
 
 		<span class="theme_version">
+		    <strong><?php echo esc_html__('v1.0.8', 'vivi-mag'); ?></strong>
+		    <?php echo esc_html__('Release date : March, 30 - 2025', 'vivi-mag'); ?>
+		    <span class="dashicons dashicons-arrow-down-alt2"></span>
+		</span>
+
+		<div class="changelog_details" style="display: none; ">
+		    <ul>
+				<li><?php echo esc_html__('Edit : Code optimized', 'vivi-mag'); ?></li>
+		    </ul>
+		</div>
+
+	</div>
+
+	<div class="changelog_element">
+
+		<span class="theme_version">
 		    <strong><?php echo esc_html__('v1.0.7', 'vivi-mag'); ?></strong>
 		    <?php echo esc_html__('Release date : March, 01 - 2025', 'vivi-mag'); ?>
 		    <span class="dashicons dashicons-arrow-down-alt2"></span>
